@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the  Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+  <head>
+    <title>Yu Chang</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:700"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#publication">Publication</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Entries Column -->
+        <div class="col-md-8">
+          <!-- Main Image -->
+          <img class="img-responsive" src="photo.png" alt="" /><br />
+
+          <div style="margin-top:3%; text-align:justify;">
+            <p>
+              I'm a second-year undergraduate student in Software Engineering
+              at
+              <a href="https://en.uestc.edu.cn/" target="_blank"
+                >the University of Electronic Science and Technology of China (UESTC)</a
+              >, under the supervision of
+              <a href="https://www.ss.uestc.edu.cn/teachers.do?id=1058" target="_blank"
+                >Prof. Yongbin Yu</a>. In the 2020 academic year, I am a recipient of the UESTC School Scholarship.
+            </p>
+
+            <p>
+              My research interests are mainly physically-based simulation and photo-realistic rendering for computer graphics. 
+			  In my first year, I wrote a Monte-Carlo path tracer independently, which implemented several state-of-the-art light transport algorithms like VCM and Path Guiding and optimized with Multithreading and SIMD. Later I took the course 
+			  <a href="https://yuanming.taichi.graphics/teaching/2020-games201/" target="_blank"
+                >GAMES202: Advanced Physics Engines</a> and the course project was selected as an outstanding project.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Info on the Sidebar -->
+        <div class="col-md-4">
+          <div style="font-family: 'Oswald', sans-serif; font-size: 32px;">
+            <b>Yu Chang</b>
+          </div>
+          <br />
+          <p>
+			<a href="mailto:g1n0st@live.com" target="_blank">
+				<b>g1n0st@live.com</b> </a> <br /></p>
+          <p>
+            No.4, Jianshe North Road 2nd Section, Chenghua <br />
+			Chengdu <br />
+			Sichuan China <br />
+		  </p>
+        </div>
+
+        <!-- Links on the Sidebar -->
+        <div class="col-md-4" style="margin-top:2%">
+          <dd>
+            <a href="https://g1n0st.github.io/" target="_blank">Personal Page</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/g1n0st" target="_blank">GitHub</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/g1n0st/resume/raw/master/YuChang_Resume.pdf" target="_blank"
+              >Resume (PDF)</a
+            >
+          </dd>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10">
+          <h2 id="education">Education</h2>
+          <strong>BSc in Software Engineering</strong><br />
+          <p>
+            University of Electronic Science and Technology of China (Sep 2019 – Expected June 2022, China)<br />
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10">
+          <h2 id="publication">Publication</h2>
+          <strong> Preprints </strong>
+		  <ul>
+            <li class="paper" words="add, your, keywords, here">
+              <strong> C. Yu </strong>, Y. Wu, "Real-time Physics Engine Based on MPM and PBD", 2020 International Conference on Virtual Reality and Visualization (ICVRV).
+			   &ensp;
+			   <a href="https://github.com/Wimacs/taichi_code/tree/master/hw2" target="_blank"
+              >[Code]</a> &ensp;
+			  <a href="https://www.bilibili.com/video/BV15f4y1q79h" target="_blank"
+              >[Video]</a>
+			</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10">
+          <h2 id="projects">Projects</h2>
+
+          <strong>AyaRay</strong><br />
+          <p>
+            A physically-based path tracing renderer implements many state-of-the-art light transport algorithms 
+			like Multiplexed Metropolis Light Transport, 
+			Vertex Connection and Merging, 
+			Practical Path Guiding. 
+			Features also include multiple importance sampling and different BSDFs.<br />
+            <a href="https://github.com/g1n0st/AyaRay" target="_blank"
+              >https://github.com/g1n0st/AyaRay</a
+            >
+          </p>
+
+          <strong>taichi_ferrofluid</strong><br />
+          <p>
+            Implementation of <i>A Level-Set Method for Magnetic Substance Simulation in the Taichi language</i>. 
+			It also implements most Euler fluid algorithms in <i>Fluid Simulation for Computer Graphics</i>.<br />
+            <a
+              href="https://github.com/g1n0st/taichi_ferrofluid"
+              target="_blank"
+              >https://github.com/g1n0st/taichi_ferrofluid</a
+            >
+          </p>
+
+          <strong>Multi-Species MLS-MPM</strong><br />
+          <p>
+            A 2D real-time implementation of <i>Multi-species simulation of porous sand and water mixtures</i>
+			and <i>Drucker-prager elastoplasticity for sand animation</i>.<br />
+            <a href="https://github.com/g1n0st/GAMES201/tree/master/hw2" target="_blank"
+              >https://github.com/g1n0st/GAMES201/tree/master/hw2</a
+            >
+          </p>
+
+          <strong>Implicit MPM</strong><br />
+          <p>
+            An Implicit Material Point Method simulator with elastic model. 
+			Additional features include APIC transfer scheme and implementation of 
+			<i>Optimization integrator for large time steps</i>.<br />
+            <a
+              href="https://github.com/g1n0st/GAMES201/tree/master/extra/implicitMPM"
+              target="_blank"
+              >https://github.com/g1n0st/GAMES201/tree/master/extra/implicitMPM</a
+            >
+          </p>
+
+          <strong>Weakly Compressible SPH</strong><br />
+          <p>
+            A weakly compressible SPH simulator with surface tension model of 
+			<i>Pairwise Force SPH Model for Real-Time Multi-Interaction Applications</i>.<br />
+            <a
+              href="https://github.com/g1n0st/GAMES201/tree/master/extra/WeaklyCompressibleSPH"
+              target="_blank"
+              >https://github.com/g1n0st/GAMES201/tree/master/extra/WeaklyCompressibleSPH</a
+            >
+          </p>
+
+		  <strong>AyaGui</strong><br />
+          <p>
+            A lite custom imgui-mode graphic user interface based on Modern C++ and OpenGL.<br />
+            <a
+              href="https://github.com/g1n0st/AyaGui"
+              target="_blank"
+              >https://github.com/g1n0st/AyaGui</a
+            >
+          </p>
+
+		  <strong>AyaMath</strong><br />
+          <p>
+            Optimized Computer Graphics Matrix Library for use with the SIMD/SSE4 Instructions.<br />
+            <a
+              href="https://github.com/g1n0st/AyaMath"
+              target="_blank"
+              >https://github.com/g1n0st/AyaMath</a
+            >
+          </p>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10"></div>
+        <br />
+        <a
+          href="https://github.com/mavroudisv/plain-academic"
+          target="_blank"
+          style="color: gray"
+          >Thanks to Vasilios Mavroudis for website template</a
+        >
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- /.container -->
+  </body>
+</html>
